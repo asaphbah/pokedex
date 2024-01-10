@@ -1,0 +1,142 @@
+@keyframes sprites-animation {
+  from {
+    z-index: 3;
+  }
+  to {
+    z-index: 5;
+  }
+}
+.pokemon-container {
+  z-index: 2;
+  width: 240px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: #e0e0e0;
+  margin: 2px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pokemon-name {
+  padding: 3px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.pokemon-sprites {
+  position: relative;
+  margin: auto;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon-sprites > img {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+.pokemon-sprites > img:nth-child(1) {
+  z-index: 4;
+}
+.pokemon-sprites > img:nth-child(2) {
+  animation: sprites-animation var(--temp) infinite alternate steps(2);
+}
+.pokemon-type {
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.pokemon-type > p {
+  margin: 3px;
+  padding: 5px;
+  border-radius: 10px;
+}
+/* Cores baseadas nos tipos de Pokémon */
+.normal {
+  background-color: #a8a878;
+}
+
+.fire {
+  background-color: #f08030;
+}
+
+.water {
+  background-color: #6890f0;
+}
+
+.grass {
+  background-color: #78c850;
+}
+
+.electric {
+  background-color: #f8d030;
+}
+
+.ice {
+  background-color: #98d8d8;
+}
+
+.fighting {
+  background-color: #c03028;
+}
+
+.poison {
+  background-color: #a040a0;
+}
+
+.ground {
+  background-color: #e0c068;
+}
+
+.flying {
+  background-color: #a890f0;
+}
+
+.psychic {
+  background-color: #f85888;
+}
+
+.bug {
+  background-color: #a8b820;
+}
+
+.rock {
+  background-color: #b8a038;
+}
+
+.ghost {
+  background-color: #705898;
+}
+
+.dragon {
+  background-color: #7038f8;
+}
+
+.dark {
+  background-color: #705848;
+}
+
+.steel {
+  background-color: #b8b8d0;
+}
+
+.fairy {
+  background-color: #ee99ac;
+}

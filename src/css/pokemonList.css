@@ -1,0 +1,175 @@
+.body-list {
+  padding-top: 10px;
+  position: relative;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: transparent;
+}
+.body-list > span {
+  right: -150px;
+  transform: rotate(120deg);
+  top: -50px;
+  z-index: 1;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  background-color: #992323;
+  position: absolute;
+  overflow: hidden;
+}
+.body-list > span::after {
+  position: absolute;
+  content: "";
+  width: 400px;
+  height: 190px;
+  border-bottom: 10px solid #fff;
+  background-color: rgba(218, 218, 218, 0.877);
+}
+.body-list > span::before {
+  position: absolute;
+  content: "";
+  border-top: 10px solid #fff;
+  width: 400px;
+  height: 190px;
+  bottom: 0;
+  background-color: rgba(218, 218, 218, 0.877);
+}
+.body-list > span > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  z-index: 1;
+  background-color: #ffffff;
+}
+.list-filter {
+  z-index: 2;
+  width: 99%;
+  height: 100px;
+  background-color: #000;
+  margin: 10px auto;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.list-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+
+.list-filter input {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  width: 60%; /* Ajuste a largura conforme desejado */
+}
+.btn {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover:hover {
+  transform: scale(1.1);
+}
+button:active:active {
+  transform: scale(0.9);
+}
+.search-type > select {
+  width: 200px;
+  outline: none;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+.menu-search {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.search-pokemon {
+  margin-right: 10px;
+  position: relative;
+}
+.search-pokemon::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 5px;
+  transition: 2s; /* Alteração na propriedade para a transição */
+  background-color: rgb(252, 252, 252);
+}
+.search-pokemon > input {
+  padding: 8px 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  transition: 0.5s;
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+.search-pokemon:hover input {
+  color: #fff;
+  background-color: #000000;
+}
+.search-pokemon:hover::after {
+  width: 100%;
+  background-color: #fff;
+}
+
+.list-pokemon {
+  z-index: 2;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+
+  gap: 5px;
+}
+.pagination {
+  width: 100vw;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.btn-pg {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+.btn-pg:hover {
+  background-color: #e0e0e0;
+}
+.active > .btn-pg {
+  color: #ccc;
+  background-color: #000;
+}
